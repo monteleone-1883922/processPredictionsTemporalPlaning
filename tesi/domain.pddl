@@ -33,11 +33,21 @@
         :precondition (enabled crp)
         :effect (and
             (completed crp)
-            (forall
-                (?old - crp_type)
-                (when
-                    (crp ?old)
-                    (not (crp ?old))))
+            (when
+                (crp gte_147_5)
+                (not (crp gte_147_5)))
+            (when
+                (crp gte_28_5_lte_40_5)
+                (not (crp gte_28_5_lte_40_5)))
+            (when
+                (crp gte_40_5_lte_57_5)
+                (not (crp gte_40_5_lte_57_5)))
+            (when
+                (crp gte_57_5_lte_147_5)
+                (not (crp gte_57_5_lte_147_5)))
+            (when
+                (crp lte_28_5)
+                (not (crp lte_28_5)))
             (crp gte_147_5)
             (enabled tau_14)
             (enabled tau_1)
@@ -48,11 +58,21 @@
         :precondition (enabled crp)
         :effect (and
             (completed crp)
-            (forall
-                (?old - crp_type)
-                (when
-                    (crp ?old)
-                    (not (crp ?old))))
+            (when
+                (crp gte_147_5)
+                (not (crp gte_147_5)))
+            (when
+                (crp gte_28_5_lte_40_5)
+                (not (crp gte_28_5_lte_40_5)))
+            (when
+                (crp gte_40_5_lte_57_5)
+                (not (crp gte_40_5_lte_57_5)))
+            (when
+                (crp gte_57_5_lte_147_5)
+                (not (crp gte_57_5_lte_147_5)))
+            (when
+                (crp lte_28_5)
+                (not (crp lte_28_5)))
             (crp gte_28_5_lte_40_5)
             (enabled tau_14)
             (enabled tau_1)
@@ -63,11 +83,21 @@
         :precondition (enabled crp)
         :effect (and
             (completed crp)
-            (forall
-                (?old - crp_type)
-                (when
-                    (crp ?old)
-                    (not (crp ?old))))
+            (when
+                (crp gte_147_5)
+                (not (crp gte_147_5)))
+            (when
+                (crp gte_28_5_lte_40_5)
+                (not (crp gte_28_5_lte_40_5)))
+            (when
+                (crp gte_40_5_lte_57_5)
+                (not (crp gte_40_5_lte_57_5)))
+            (when
+                (crp gte_57_5_lte_147_5)
+                (not (crp gte_57_5_lte_147_5)))
+            (when
+                (crp lte_28_5)
+                (not (crp lte_28_5)))
             (crp gte_40_5_lte_57_5)
             (enabled tau_14)
             (enabled tau_1)
@@ -78,11 +108,21 @@
         :precondition (enabled crp)
         :effect (and
             (completed crp)
-            (forall
-                (?old - crp_type)
-                (when
-                    (crp ?old)
-                    (not (crp ?old))))
+            (when
+                (crp gte_147_5)
+                (not (crp gte_147_5)))
+            (when
+                (crp gte_28_5_lte_40_5)
+                (not (crp gte_28_5_lte_40_5)))
+            (when
+                (crp gte_40_5_lte_57_5)
+                (not (crp gte_40_5_lte_57_5)))
+            (when
+                (crp gte_57_5_lte_147_5)
+                (not (crp gte_57_5_lte_147_5)))
+            (when
+                (crp lte_28_5)
+                (not (crp lte_28_5)))
             (crp gte_57_5_lte_147_5)
             (enabled tau_14)
             (enabled tau_1)
@@ -93,11 +133,21 @@
         :precondition (enabled crp)
         :effect (and
             (completed crp)
-            (forall
-                (?old - crp_type)
-                (when
-                    (crp ?old)
-                    (not (crp ?old))))
+            (when
+                (crp gte_147_5)
+                (not (crp gte_147_5)))
+            (when
+                (crp gte_28_5_lte_40_5)
+                (not (crp gte_28_5_lte_40_5)))
+            (when
+                (crp gte_40_5_lte_57_5)
+                (not (crp gte_40_5_lte_57_5)))
+            (when
+                (crp gte_57_5_lte_147_5)
+                (not (crp gte_57_5_lte_147_5)))
+            (when
+                (crp lte_28_5)
+                (not (crp lte_28_5)))
             (crp lte_28_5)
             (enabled tau_14)
             (enabled tau_1)
@@ -174,11 +224,18 @@
             (enabled lacticacid))
         :effect (and
             (completed lacticacid)
-            (forall
-                (?old - lacticacid_type)
-                (when
-                    (lacticacid ?old)
-                    (not (lacticacid ?old))))
+            (when
+                (lacticacid gte_0_2_lte_0_75)
+                (not (lacticacid gte_0_2_lte_0_75)))
+            (when
+                (lacticacid gte_0_75_lte_2_15)
+                (not (lacticacid gte_0_75_lte_2_15)))
+            (when
+                (lacticacid gte_2_15)
+                (not (lacticacid gte_2_15)))
+            (when
+                (lacticacid lte_0_2)
+                (not (lacticacid lte_0_2)))
             (lacticacid gte_0_2_lte_0_75)
             (enabled tau_17)
             (not (enabled lacticacid)))
@@ -191,11 +248,18 @@
         )
         :effect (and
             (completed lacticacid)
-            (forall
-                (?old - lacticacid_type)
-                (when
-                    (lacticacid ?old)
-                    (not (lacticacid ?old))))
+            (when
+                (lacticacid gte_0_2_lte_0_75)
+                (not (lacticacid gte_0_2_lte_0_75)))
+            (when
+                (lacticacid gte_0_75_lte_2_15)
+                (not (lacticacid gte_0_75_lte_2_15)))
+            (when
+                (lacticacid gte_2_15)
+                (not (lacticacid gte_2_15)))
+            (when
+                (lacticacid lte_0_2)
+                (not (lacticacid lte_0_2)))
             (lacticacid gte_0_75_lte_2_15)
             (enabled tau_17)
             (not (enabled lacticacid)))
@@ -207,11 +271,18 @@
             (enabled lacticacid))
         :effect (and
             (completed lacticacid)
-            (forall
-                (?old - lacticacid_type)
-                (when
-                    (lacticacid ?old)
-                    (not (lacticacid ?old))))
+            (when
+                (lacticacid gte_0_2_lte_0_75)
+                (not (lacticacid gte_0_2_lte_0_75)))
+            (when
+                (lacticacid gte_0_75_lte_2_15)
+                (not (lacticacid gte_0_75_lte_2_15)))
+            (when
+                (lacticacid gte_2_15)
+                (not (lacticacid gte_2_15)))
+            (when
+                (lacticacid lte_0_2)
+                (not (lacticacid lte_0_2)))
             (lacticacid gte_2_15)
             (enabled tau_17)
             (not (enabled lacticacid)))
@@ -223,11 +294,18 @@
             (enabled lacticacid))
         :effect (and
             (completed lacticacid)
-            (forall
-                (?old - lacticacid_type)
-                (when
-                    (lacticacid ?old)
-                    (not (lacticacid ?old))))
+            (when
+                (lacticacid gte_0_2_lte_0_75)
+                (not (lacticacid gte_0_2_lte_0_75)))
+            (when
+                (lacticacid gte_0_75_lte_2_15)
+                (not (lacticacid gte_0_75_lte_2_15)))
+            (when
+                (lacticacid gte_2_15)
+                (not (lacticacid gte_2_15)))
+            (when
+                (lacticacid lte_0_2)
+                (not (lacticacid lte_0_2)))
             (lacticacid lte_0_2)
             (enabled tau_17)
             (not (enabled lacticacid)))
@@ -237,11 +315,21 @@
         :precondition (enabled leucocytes)
         :effect (and
             (completed leucocytes)
-            (forall
-                (?old - leucocytes_type)
-                (when
-                    (leucocytes ?old)
-                    (not (leucocytes ?old))))
+            (when
+                (leucocytes gte_12_15_lte_13_95)
+                (not (leucocytes gte_12_15_lte_13_95)))
+            (when
+                (leucocytes gte_13_95)
+                (not (leucocytes gte_13_95)))
+            (when
+                (leucocytes gte_3_4_lte_7_15)
+                (not (leucocytes gte_3_4_lte_7_15)))
+            (when
+                (leucocytes gte_7_15_lte_12_15)
+                (not (leucocytes gte_7_15_lte_12_15)))
+            (when
+                (leucocytes lte_3_4)
+                (not (leucocytes lte_3_4)))
             (leucocytes gte_12_15_lte_13_95)
             (enabled tau_8)
             (enabled tau_20)
@@ -252,11 +340,21 @@
         :precondition (enabled leucocytes)
         :effect (and
             (completed leucocytes)
-            (forall
-                (?old - leucocytes_type)
-                (when
-                    (leucocytes ?old)
-                    (not (leucocytes ?old))))
+            (when
+                (leucocytes gte_12_15_lte_13_95)
+                (not (leucocytes gte_12_15_lte_13_95)))
+            (when
+                (leucocytes gte_13_95)
+                (not (leucocytes gte_13_95)))
+            (when
+                (leucocytes gte_3_4_lte_7_15)
+                (not (leucocytes gte_3_4_lte_7_15)))
+            (when
+                (leucocytes gte_7_15_lte_12_15)
+                (not (leucocytes gte_7_15_lte_12_15)))
+            (when
+                (leucocytes lte_3_4)
+                (not (leucocytes lte_3_4)))
             (leucocytes gte_13_95)
             (enabled tau_8)
             (enabled tau_20)
@@ -267,11 +365,21 @@
         :precondition (enabled leucocytes)
         :effect (and
             (completed leucocytes)
-            (forall
-                (?old - leucocytes_type)
-                (when
-                    (leucocytes ?old)
-                    (not (leucocytes ?old))))
+            (when
+                (leucocytes gte_12_15_lte_13_95)
+                (not (leucocytes gte_12_15_lte_13_95)))
+            (when
+                (leucocytes gte_13_95)
+                (not (leucocytes gte_13_95)))
+            (when
+                (leucocytes gte_3_4_lte_7_15)
+                (not (leucocytes gte_3_4_lte_7_15)))
+            (when
+                (leucocytes gte_7_15_lte_12_15)
+                (not (leucocytes gte_7_15_lte_12_15)))
+            (when
+                (leucocytes lte_3_4)
+                (not (leucocytes lte_3_4)))
             (leucocytes gte_3_4_lte_7_15)
             (enabled tau_8)
             (enabled tau_20)
@@ -282,11 +390,21 @@
         :precondition (enabled leucocytes)
         :effect (and
             (completed leucocytes)
-            (forall
-                (?old - leucocytes_type)
-                (when
-                    (leucocytes ?old)
-                    (not (leucocytes ?old))))
+            (when
+                (leucocytes gte_12_15_lte_13_95)
+                (not (leucocytes gte_12_15_lte_13_95)))
+            (when
+                (leucocytes gte_13_95)
+                (not (leucocytes gte_13_95)))
+            (when
+                (leucocytes gte_3_4_lte_7_15)
+                (not (leucocytes gte_3_4_lte_7_15)))
+            (when
+                (leucocytes gte_7_15_lte_12_15)
+                (not (leucocytes gte_7_15_lte_12_15)))
+            (when
+                (leucocytes lte_3_4)
+                (not (leucocytes lte_3_4)))
             (leucocytes gte_7_15_lte_12_15)
             (enabled tau_8)
             (enabled tau_20)
@@ -297,11 +415,21 @@
         :precondition (enabled leucocytes)
         :effect (and
             (completed leucocytes)
-            (forall
-                (?old - leucocytes_type)
-                (when
-                    (leucocytes ?old)
-                    (not (leucocytes ?old))))
+            (when
+                (leucocytes gte_12_15_lte_13_95)
+                (not (leucocytes gte_12_15_lte_13_95)))
+            (when
+                (leucocytes gte_13_95)
+                (not (leucocytes gte_13_95)))
+            (when
+                (leucocytes gte_3_4_lte_7_15)
+                (not (leucocytes gte_3_4_lte_7_15)))
+            (when
+                (leucocytes gte_7_15_lte_12_15)
+                (not (leucocytes gte_7_15_lte_12_15)))
+            (when
+                (leucocytes lte_3_4)
+                (not (leucocytes lte_3_4)))
             (leucocytes lte_3_4)
             (enabled tau_8)
             (enabled tau_20)
