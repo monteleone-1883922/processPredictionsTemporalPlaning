@@ -38,803 +38,1825 @@
     )
     (:action exec_admission_nc
         :parameters ()
-        :precondition (and (enabled admission_nc)
-            (completed tau_7) (not_busy))
-        :effect (and (completed admission_nc) (enabled tau_15) (enabled tau_7) (not (enabled admission_nc)))
+        :precondition (and
+            (enabled admission_nc)
+            (completed tau_7)
+            (not_busy)
+        )
+        :effect (and
+            (completed admission_nc)
+            (enabled tau_15)
+            (enabled tau_7)
+            (not (enabled admission_nc))
+        )
     )
 
     (:action exec_crp-gte_147_5_start
         :parameters ()
-        :precondition (and (enabled crp) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_crp_gte_147_5))
+        :precondition (and
+            (enabled crp)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_crp_gte_147_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (crp gte_147_5))
-        :effect (and (not (crp gte_147_5)) (not_crp gte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (crp gte_147_5)
+        )
+        :effect (and
+            (not (crp gte_147_5))
+            (not_crp gte_147_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (crp gte_28_5_lte_40_5))
-        :effect (and (not (crp gte_28_5_lte_40_5)) (not_crp gte_28_5_lte_40_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (crp gte_28_5_lte_40_5)
+        )
+        :effect (and
+            (not (crp gte_28_5_lte_40_5))
+            (not_crp gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (crp gte_40_5_lte_57_5))
-        :effect (and (not (crp gte_40_5_lte_57_5)) (not_crp gte_40_5_lte_57_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (crp gte_40_5_lte_57_5)
+        )
+        :effect (and
+            (not (crp gte_40_5_lte_57_5))
+            (not_crp gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (crp gte_57_5_lte_147_5))
-        :effect (and (not (crp gte_57_5_lte_147_5)) (not_crp gte_57_5_lte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (crp gte_57_5_lte_147_5)
+        )
+        :effect (and
+            (not (crp gte_57_5_lte_147_5))
+            (not_crp gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (crp lte_28_5))
-        :effect (and (not (crp lte_28_5)) (not_crp lte_28_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (crp lte_28_5)
+        )
+        :effect (and
+            (not (crp lte_28_5))
+            (not_crp lte_28_5)
+        )
     )
 
     (:action exec_crp-gte_147_5_end
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_147_5) (not_crp gte_147_5) (not_crp gte_28_5_lte_40_5) (not_crp gte_40_5_lte_57_5) (not_crp gte_57_5_lte_147_5) (not_crp lte_28_5))
-        :effect (and 
-        (not (busy)) 
-        (not_busy) 
-        (not (active_exec_crp_gte_147_5)) 
-        (completed crp) 
-        (crp gte_147_5) 
-        (not (not_crp gte_147_5)) 
-        (enabled tau_14) 
-        (enabled tau_1) 
-        (not (enabled crp))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_147_5)
+            (not_crp gte_147_5)
+            (not_crp gte_28_5_lte_40_5)
+            (not_crp gte_40_5_lte_57_5)
+            (not_crp gte_57_5_lte_147_5)
+            (not_crp lte_28_5)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_crp_gte_147_5))
+            (completed crp)
+            (crp gte_147_5)
+            (not (not_crp gte_147_5))
+            (enabled tau_14)
+            (enabled tau_1)
+            (not (enabled crp))
         )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_start
         :parameters ()
-        :precondition (and (enabled crp) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_crp_gte_28_5_lte_40_5))
+        :precondition (and
+            (enabled crp)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_crp_gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (crp gte_147_5))
-        :effect (and (not (crp gte_147_5)) (not_crp gte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (crp gte_147_5)
+        )
+        :effect (and
+            (not (crp gte_147_5))
+            (not_crp gte_147_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (crp gte_28_5_lte_40_5))
-        :effect (and (not (crp gte_28_5_lte_40_5)) (not_crp gte_28_5_lte_40_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (crp gte_28_5_lte_40_5)
+        )
+        :effect (and
+            (not (crp gte_28_5_lte_40_5))
+            (not_crp gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (crp gte_40_5_lte_57_5))
-        :effect (and (not (crp gte_40_5_lte_57_5)) (not_crp gte_40_5_lte_57_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (crp gte_40_5_lte_57_5)
+        )
+        :effect (and
+            (not (crp gte_40_5_lte_57_5))
+            (not_crp gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (crp gte_57_5_lte_147_5))
-        :effect (and (not (crp gte_57_5_lte_147_5)) (not_crp gte_57_5_lte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (crp gte_57_5_lte_147_5)
+        )
+        :effect (and
+            (not (crp gte_57_5_lte_147_5))
+            (not_crp gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (crp lte_28_5))
-        :effect (and (not (crp lte_28_5)) (not_crp lte_28_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (crp lte_28_5)
+        )
+        :effect (and
+            (not (crp lte_28_5))
+            (not_crp lte_28_5)
+        )
     )
 
     (:action exec_crp-gte_28_5_lte_40_5_end
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_28_5_lte_40_5) (not_crp gte_147_5) (not_crp gte_28_5_lte_40_5) (not_crp gte_40_5_lte_57_5) (not_crp gte_57_5_lte_147_5) (not_crp lte_28_5))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_crp_gte_28_5_lte_40_5)) (completed crp) (crp gte_28_5_lte_40_5) (not (not_crp gte_28_5_lte_40_5)) (enabled tau_14) (enabled tau_1) (not (enabled crp)))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_28_5_lte_40_5)
+            (not_crp gte_147_5)
+            (not_crp gte_28_5_lte_40_5)
+            (not_crp gte_40_5_lte_57_5)
+            (not_crp gte_57_5_lte_147_5)
+            (not_crp lte_28_5)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_crp_gte_28_5_lte_40_5))
+            (completed crp)
+            (crp gte_28_5_lte_40_5)
+            (not (not_crp gte_28_5_lte_40_5))
+            (enabled tau_14)
+            (enabled tau_1)
+            (not (enabled crp))
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_start
         :parameters ()
-        :precondition (and (enabled crp) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_crp_gte_40_5_lte_57_5))
+        :precondition (and
+            (enabled crp)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_crp_gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (crp gte_147_5))
-        :effect (and (not (crp gte_147_5)) (not_crp gte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (crp gte_147_5)
+        )
+        :effect (and
+            (not (crp gte_147_5))
+            (not_crp gte_147_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (crp gte_28_5_lte_40_5))
-        :effect (and (not (crp gte_28_5_lte_40_5)) (not_crp gte_28_5_lte_40_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (crp gte_28_5_lte_40_5)
+        )
+        :effect (and
+            (not (crp gte_28_5_lte_40_5))
+            (not_crp gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (crp gte_40_5_lte_57_5))
-        :effect (and (not (crp gte_40_5_lte_57_5)) (not_crp gte_40_5_lte_57_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (crp gte_40_5_lte_57_5)
+        )
+        :effect (and
+            (not (crp gte_40_5_lte_57_5))
+            (not_crp gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (crp gte_57_5_lte_147_5))
-        :effect (and (not (crp gte_57_5_lte_147_5)) (not_crp gte_57_5_lte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (crp gte_57_5_lte_147_5)
+        )
+        :effect (and
+            (not (crp gte_57_5_lte_147_5))
+            (not_crp gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (crp lte_28_5))
-        :effect (and (not (crp lte_28_5)) (not_crp lte_28_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (crp lte_28_5)
+        )
+        :effect (and
+            (not (crp lte_28_5))
+            (not_crp lte_28_5)
+        )
     )
 
     (:action exec_crp-gte_40_5_lte_57_5_end
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_40_5_lte_57_5) (not_crp gte_147_5) (not_crp gte_28_5_lte_40_5) (not_crp gte_40_5_lte_57_5) (not_crp gte_57_5_lte_147_5) (not_crp lte_28_5))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_crp_gte_40_5_lte_57_5)) (completed crp) (crp gte_40_5_lte_57_5) (not (not_crp gte_40_5_lte_57_5)) (enabled tau_14) (enabled tau_1) (not (enabled crp)))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_40_5_lte_57_5)
+            (not_crp gte_147_5)
+            (not_crp gte_28_5_lte_40_5)
+            (not_crp gte_40_5_lte_57_5)
+            (not_crp gte_57_5_lte_147_5)
+            (not_crp lte_28_5)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_crp_gte_40_5_lte_57_5))
+            (completed crp)
+            (crp gte_40_5_lte_57_5)
+            (not (not_crp gte_40_5_lte_57_5))
+            (enabled tau_14)
+            (enabled tau_1)
+            (not (enabled crp))
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_start
         :parameters ()
-        :precondition (and (enabled crp) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_crp_gte_57_5_lte_147_5))
+        :precondition (and
+            (enabled crp)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_crp_gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (crp gte_147_5))
-        :effect (and (not (crp gte_147_5)) (not_crp gte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (crp gte_147_5)
+        )
+        :effect (and
+            (not (crp gte_147_5))
+            (not_crp gte_147_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (crp gte_28_5_lte_40_5))
-        :effect (and (not (crp gte_28_5_lte_40_5)) (not_crp gte_28_5_lte_40_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (crp gte_28_5_lte_40_5)
+        )
+        :effect (and
+            (not (crp gte_28_5_lte_40_5))
+            (not_crp gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (crp gte_40_5_lte_57_5))
-        :effect (and (not (crp gte_40_5_lte_57_5)) (not_crp gte_40_5_lte_57_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (crp gte_40_5_lte_57_5)
+        )
+        :effect (and
+            (not (crp gte_40_5_lte_57_5))
+            (not_crp gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (crp gte_57_5_lte_147_5))
-        :effect (and (not (crp gte_57_5_lte_147_5)) (not_crp gte_57_5_lte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (crp gte_57_5_lte_147_5)
+        )
+        :effect (and
+            (not (crp gte_57_5_lte_147_5))
+            (not_crp gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (crp lte_28_5))
-        :effect (and (not (crp lte_28_5)) (not_crp lte_28_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (crp lte_28_5)
+        )
+        :effect (and
+            (not (crp lte_28_5))
+            (not_crp lte_28_5)
+        )
     )
 
     (:action exec_crp-gte_57_5_lte_147_5_end
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_gte_57_5_lte_147_5) (not_crp gte_147_5) (not_crp gte_28_5_lte_40_5) (not_crp gte_40_5_lte_57_5) (not_crp gte_57_5_lte_147_5) (not_crp lte_28_5))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_crp_gte_57_5_lte_147_5)) (completed crp) (crp gte_57_5_lte_147_5) (not (not_crp gte_57_5_lte_147_5)) (enabled tau_14) (enabled tau_1) (not (enabled crp)))
+        :precondition (and
+            (busy)
+            (active_exec_crp_gte_57_5_lte_147_5)
+            (not_crp gte_147_5)
+            (not_crp gte_28_5_lte_40_5)
+            (not_crp gte_40_5_lte_57_5)
+            (not_crp gte_57_5_lte_147_5)
+            (not_crp lte_28_5)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_crp_gte_57_5_lte_147_5))
+            (completed crp)
+            (crp gte_57_5_lte_147_5)
+            (not (not_crp gte_57_5_lte_147_5))
+            (enabled tau_14)
+            (enabled tau_1)
+            (not (enabled crp))
+        )
     )
 
     (:action exec_crp-lte_28_5_start
         :parameters ()
-        :precondition (and (enabled crp) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_crp_lte_28_5))
+        :precondition (and
+            (enabled crp)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_crp_lte_28_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (crp gte_147_5))
-        :effect (and (not (crp gte_147_5)) (not_crp gte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (crp gte_147_5)
+        )
+        :effect (and
+            (not (crp gte_147_5))
+            (not_crp gte_147_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (crp gte_28_5_lte_40_5))
-        :effect (and (not (crp gte_28_5_lte_40_5)) (not_crp gte_28_5_lte_40_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (crp gte_28_5_lte_40_5)
+        )
+        :effect (and
+            (not (crp gte_28_5_lte_40_5))
+            (not_crp gte_28_5_lte_40_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (crp gte_40_5_lte_57_5))
-        :effect (and (not (crp gte_40_5_lte_57_5)) (not_crp gte_40_5_lte_57_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (crp gte_40_5_lte_57_5)
+        )
+        :effect (and
+            (not (crp gte_40_5_lte_57_5))
+            (not_crp gte_40_5_lte_57_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (crp gte_57_5_lte_147_5))
-        :effect (and (not (crp gte_57_5_lte_147_5)) (not_crp gte_57_5_lte_147_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (crp gte_57_5_lte_147_5)
+        )
+        :effect (and
+            (not (crp gte_57_5_lte_147_5))
+            (not_crp gte_57_5_lte_147_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (crp lte_28_5))
-        :effect (and (not (crp lte_28_5)) (not_crp lte_28_5))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (crp lte_28_5)
+        )
+        :effect (and
+            (not (crp lte_28_5))
+            (not_crp lte_28_5)
+        )
     )
 
     (:action exec_crp-lte_28_5_end
         :parameters ()
-        :precondition (and (busy) (active_exec_crp_lte_28_5) (not_crp gte_147_5) (not_crp gte_28_5_lte_40_5) (not_crp gte_40_5_lte_57_5) (not_crp gte_57_5_lte_147_5) (not_crp lte_28_5))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_crp_lte_28_5)) (completed crp) (crp lte_28_5) (not (not_crp lte_28_5)) (enabled tau_14) (enabled tau_1) (not (enabled crp)))
+        :precondition (and
+            (busy)
+            (active_exec_crp_lte_28_5)
+            (not_crp gte_147_5)
+            (not_crp gte_28_5_lte_40_5)
+            (not_crp gte_40_5_lte_57_5)
+            (not_crp gte_57_5_lte_147_5)
+            (not_crp lte_28_5)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_crp_lte_28_5))
+            (completed crp)
+            (crp lte_28_5)
+            (not (not_crp lte_28_5))
+            (enabled tau_14)
+            (enabled tau_1)
+            (not (enabled crp))
+        )
     )
 
     (:action exec_er_registration
         :parameters ()
-        :precondition (and (enabled er_registration) (not_busy))
-        :effect (and (completed er_registration) (enabled er_triage) (not (enabled er_registration)))
+        :precondition (and
+            (enabled er_registration)
+            (not_busy)
+        )
+        :effect (and
+            (completed er_registration)
+            (enabled er_triage)
+            (not (enabled er_registration))
+        )
     )
 
     (:action exec_er_sepsis_triage_v1
         :parameters ()
-        :precondition (and (enabled er_sepsis_triage)
-            (crp gte_57_5_lte_147_5) (not_busy))
-        :effect (and (completed er_sepsis_triage) (enabled tau_9) (enabled tau_2) (not (enabled er_sepsis_triage)))
+        :precondition (and
+            (enabled er_sepsis_triage)
+            (crp gte_57_5_lte_147_5)
+            (not_busy)
+        )
+        :effect (and
+            (completed er_sepsis_triage)
+            (enabled tau_9)
+            (enabled tau_2)
+            (not (enabled er_sepsis_triage))
+        )
     )
 
     (:action exec_er_sepsis_triage_v2
         :parameters ()
-        :precondition (and (enabled er_sepsis_triage)
-            (crp gte_147_5) (not_busy))
-        :effect (and (completed er_sepsis_triage) (enabled tau_9) (enabled tau_2) (not (enabled er_sepsis_triage)))
+        :precondition (and
+            (enabled er_sepsis_triage)
+            (crp gte_147_5)
+            (not_busy)
+        )
+        :effect (and
+            (completed er_sepsis_triage)
+            (enabled tau_9)
+            (enabled tau_2)
+            (not (enabled er_sepsis_triage))
+        )
     )
 
     (:action exec_er_triage
         :parameters ()
-        :precondition (and (enabled er_triage) (not_busy))
-        :effect (and (completed er_triage) (enabled tau_6) (enabled tau_5) (enabled tau_18) (enabled tau_21) (enabled lacticacid) (enabled tau_4) (enabled er_sepsis_triage) (not (enabled er_triage)))
+        :precondition (and
+            (enabled er_triage)
+            (not_busy)
+        )
+        :effect (and
+            (completed er_triage)
+            (enabled tau_6)
+            (enabled tau_5)
+            (enabled tau_18)
+            (enabled tau_21)
+            (enabled lacticacid)
+            (enabled tau_4)
+            (enabled er_sepsis_triage)
+            (not (enabled er_triage))
+        )
     )
 
     (:action exec_iv_antibiotics
         :parameters ()
-        :precondition (and (completed tau_9)
-            (enabled iv_antibiotics) (not_busy))
-        :effect (and (completed iv_antibiotics) (enabled tau_16) (not (enabled iv_antibiotics)))
+        :precondition (and
+            (completed tau_9)
+            (enabled iv_antibiotics)
+            (not_busy)
+        )
+        :effect (and
+            (completed iv_antibiotics)
+            (enabled tau_16)
+            (not (enabled iv_antibiotics))
+        )
     )
 
     (:action exec_iv_liquid
         :parameters ()
-        :precondition (and (enabled iv_liquid)
-            (diagnosticlacticacid) (not_busy))
-        :effect (and (completed iv_liquid) (enabled tau_16) (not (enabled iv_liquid)))
+        :precondition (and
+            (enabled iv_liquid)
+            (diagnosticlacticacid)
+            (not_busy)
+        )
+        :effect (and
+            (completed iv_liquid)
+            (enabled tau_16)
+            (not (enabled iv_liquid))
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_start
         :parameters ()
-        :precondition (and (and
+        :precondition (and
+            (and
                 (completed er_triage)
-                (enabled lacticacid)) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_lacticacid_gte_0_2_lte_0_75))
+                (enabled lacticacid))
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_2_lte_0_75) (lacticacid gte_0_2_lte_0_75))
-        :effect (and (not (lacticacid gte_0_2_lte_0_75)) (not_lacticacid gte_0_2_lte_0_75))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+            (lacticacid gte_0_2_lte_0_75)
+        )
+        :effect (and
+            (not (lacticacid gte_0_2_lte_0_75))
+            (not_lacticacid gte_0_2_lte_0_75)
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_2_lte_0_75) (lacticacid gte_0_75_lte_2_15))
-        :effect (and (not (lacticacid gte_0_75_lte_2_15)) (not_lacticacid gte_0_75_lte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+            (lacticacid gte_0_75_lte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_0_75_lte_2_15))
+            (not_lacticacid gte_0_75_lte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_2_lte_0_75) (lacticacid gte_2_15))
-        :effect (and (not (lacticacid gte_2_15)) (not_lacticacid gte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+            (lacticacid gte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_2_15))
+            (not_lacticacid gte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_2_lte_0_75) (lacticacid lte_0_2))
-        :effect (and (not (lacticacid lte_0_2)) (not_lacticacid lte_0_2))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+            (lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (lacticacid lte_0_2))
+            (not_lacticacid lte_0_2)
+        )
     )
 
     (:action exec_lacticacid-gte_0_2_lte_0_75_end
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_2_lte_0_75) (not_lacticacid gte_0_2_lte_0_75) (not_lacticacid gte_0_75_lte_2_15) (not_lacticacid gte_2_15) (not_lacticacid lte_0_2))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_lacticacid_gte_0_2_lte_0_75)) (completed lacticacid) (lacticacid gte_0_2_lte_0_75) (not (not_lacticacid gte_0_2_lte_0_75)) (enabled tau_17) (not (enabled lacticacid)))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_2_lte_0_75)
+            (not_lacticacid gte_0_2_lte_0_75)
+            (not_lacticacid gte_0_75_lte_2_15)
+            (not_lacticacid gte_2_15)
+            (not_lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_lacticacid_gte_0_2_lte_0_75))
+            (completed lacticacid)
+            (lacticacid gte_0_2_lte_0_75)
+            (not (not_lacticacid gte_0_2_lte_0_75))
+            (enabled tau_17)
+            (not (enabled lacticacid))
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_start
         :parameters ()
-        :precondition (and (and
+        :precondition (and
+            (and
                 (completed er_triage)
                 (enabled lacticacid)
-            ) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_lacticacid_gte_0_75_lte_2_15))
+            )
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_75_lte_2_15) (lacticacid gte_0_2_lte_0_75))
-        :effect (and (not (lacticacid gte_0_2_lte_0_75)) (not_lacticacid gte_0_2_lte_0_75))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+            (lacticacid gte_0_2_lte_0_75)
+        )
+        :effect (and
+            (not (lacticacid gte_0_2_lte_0_75))
+            (not_lacticacid gte_0_2_lte_0_75)
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_75_lte_2_15) (lacticacid gte_0_75_lte_2_15))
-        :effect (and (not (lacticacid gte_0_75_lte_2_15)) (not_lacticacid gte_0_75_lte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+            (lacticacid gte_0_75_lte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_0_75_lte_2_15))
+            (not_lacticacid gte_0_75_lte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_75_lte_2_15) (lacticacid gte_2_15))
-        :effect (and (not (lacticacid gte_2_15)) (not_lacticacid gte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+            (lacticacid gte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_2_15))
+            (not_lacticacid gte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_75_lte_2_15) (lacticacid lte_0_2))
-        :effect (and (not (lacticacid lte_0_2)) (not_lacticacid lte_0_2))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+            (lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (lacticacid lte_0_2))
+            (not_lacticacid lte_0_2)
+        )
     )
 
     (:action exec_lacticacid-gte_0_75_lte_2_15_end
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_0_75_lte_2_15) (not_lacticacid gte_0_2_lte_0_75) (not_lacticacid gte_0_75_lte_2_15) (not_lacticacid gte_2_15) (not_lacticacid lte_0_2))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_lacticacid_gte_0_75_lte_2_15)) (completed lacticacid) (lacticacid gte_0_75_lte_2_15) (not (not_lacticacid gte_0_75_lte_2_15)) (enabled tau_17) (not (enabled lacticacid)))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_0_75_lte_2_15)
+            (not_lacticacid gte_0_2_lte_0_75)
+            (not_lacticacid gte_0_75_lte_2_15)
+            (not_lacticacid gte_2_15)
+            (not_lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_lacticacid_gte_0_75_lte_2_15))
+            (completed lacticacid)
+            (lacticacid gte_0_75_lte_2_15)
+            (not (not_lacticacid gte_0_75_lte_2_15))
+            (enabled tau_17)
+            (not (enabled lacticacid))
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_start
         :parameters ()
-        :precondition (and (and
+        :precondition (and
+            (and
                 (completed er_triage)
-                (enabled lacticacid)) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_lacticacid_gte_2_15))
+                (enabled lacticacid))
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_lacticacid_gte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_2_15) (lacticacid gte_0_2_lte_0_75))
-        :effect (and (not (lacticacid gte_0_2_lte_0_75)) (not_lacticacid gte_0_2_lte_0_75))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_2_15)
+            (lacticacid gte_0_2_lte_0_75)
+        )
+        :effect (and
+            (not (lacticacid gte_0_2_lte_0_75))
+            (not_lacticacid gte_0_2_lte_0_75)
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_2_15) (lacticacid gte_0_75_lte_2_15))
-        :effect (and (not (lacticacid gte_0_75_lte_2_15)) (not_lacticacid gte_0_75_lte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_2_15)
+            (lacticacid gte_0_75_lte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_0_75_lte_2_15))
+            (not_lacticacid gte_0_75_lte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_2_15) (lacticacid gte_2_15))
-        :effect (and (not (lacticacid gte_2_15)) (not_lacticacid gte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_2_15)
+            (lacticacid gte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_2_15))
+            (not_lacticacid gte_2_15)
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_2_15) (lacticacid lte_0_2))
-        :effect (and (not (lacticacid lte_0_2)) (not_lacticacid lte_0_2))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_2_15)
+            (lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (lacticacid lte_0_2))
+            (not_lacticacid lte_0_2)
+        )
     )
 
     (:action exec_lacticacid-gte_2_15_end
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_gte_2_15) (not_lacticacid gte_0_2_lte_0_75) (not_lacticacid gte_0_75_lte_2_15) (not_lacticacid gte_2_15) (not_lacticacid lte_0_2))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_lacticacid_gte_2_15)) (completed lacticacid) (lacticacid gte_2_15) (not (not_lacticacid gte_2_15)) (enabled tau_17) (not (enabled lacticacid)))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_gte_2_15)
+            (not_lacticacid gte_0_2_lte_0_75)
+            (not_lacticacid gte_0_75_lte_2_15)
+            (not_lacticacid gte_2_15)
+            (not_lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_lacticacid_gte_2_15))
+            (completed lacticacid)
+            (lacticacid gte_2_15)
+            (not (not_lacticacid gte_2_15))
+            (enabled tau_17)
+            (not (enabled lacticacid))
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_start
         :parameters ()
-        :precondition (and (and
+        :precondition (and
+            (and
                 (completed er_triage)
-                (enabled lacticacid)) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_lacticacid_lte_0_2))
+                (enabled lacticacid))
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_lacticacid_lte_0_2)
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_lte_0_2) (lacticacid gte_0_2_lte_0_75))
-        :effect (and (not (lacticacid gte_0_2_lte_0_75)) (not_lacticacid gte_0_2_lte_0_75))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_lte_0_2)
+            (lacticacid gte_0_2_lte_0_75)
+        )
+        :effect (and
+            (not (lacticacid gte_0_2_lte_0_75))
+            (not_lacticacid gte_0_2_lte_0_75)
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_lte_0_2) (lacticacid gte_0_75_lte_2_15))
-        :effect (and (not (lacticacid gte_0_75_lte_2_15)) (not_lacticacid gte_0_75_lte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_lte_0_2)
+            (lacticacid gte_0_75_lte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_0_75_lte_2_15))
+            (not_lacticacid gte_0_75_lte_2_15)
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_lte_0_2) (lacticacid gte_2_15))
-        :effect (and (not (lacticacid gte_2_15)) (not_lacticacid gte_2_15))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_lte_0_2)
+            (lacticacid gte_2_15)
+        )
+        :effect (and
+            (not (lacticacid gte_2_15))
+            (not_lacticacid gte_2_15)
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_lte_0_2) (lacticacid lte_0_2))
-        :effect (and (not (lacticacid lte_0_2)) (not_lacticacid lte_0_2))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_lte_0_2)
+            (lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (lacticacid lte_0_2))
+            (not_lacticacid lte_0_2)
+        )
     )
 
     (:action exec_lacticacid-lte_0_2_end
         :parameters ()
-        :precondition (and (busy) (active_exec_lacticacid_lte_0_2) (not_lacticacid gte_0_2_lte_0_75) (not_lacticacid gte_0_75_lte_2_15) (not_lacticacid gte_2_15) (not_lacticacid lte_0_2))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_lacticacid_lte_0_2)) (completed lacticacid) (lacticacid lte_0_2) (not (not_lacticacid lte_0_2)) (enabled tau_17) (not (enabled lacticacid)))
+        :precondition (and
+            (busy)
+            (active_exec_lacticacid_lte_0_2)
+            (not_lacticacid gte_0_2_lte_0_75)
+            (not_lacticacid gte_0_75_lte_2_15)
+            (not_lacticacid gte_2_15)
+            (not_lacticacid lte_0_2)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_lacticacid_lte_0_2))
+            (completed lacticacid)
+            (lacticacid lte_0_2)
+            (not (not_lacticacid lte_0_2))
+            (enabled tau_17)
+            (not (enabled lacticacid))
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_start
         :parameters ()
-        :precondition (and (enabled leucocytes) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_leucocytes_gte_12_15_lte_13_95))
+        :precondition (and
+            (enabled leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (leucocytes gte_12_15_lte_13_95))
-        :effect (and (not (leucocytes gte_12_15_lte_13_95)) (not_leucocytes gte_12_15_lte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (leucocytes gte_12_15_lte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_12_15_lte_13_95))
+            (not_leucocytes gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (leucocytes gte_13_95))
-        :effect (and (not (leucocytes gte_13_95)) (not_leucocytes gte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (leucocytes gte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_13_95))
+            (not_leucocytes gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (leucocytes gte_3_4_lte_7_15))
-        :effect (and (not (leucocytes gte_3_4_lte_7_15)) (not_leucocytes gte_3_4_lte_7_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (leucocytes gte_3_4_lte_7_15)
+        )
+        :effect (and
+            (not (leucocytes gte_3_4_lte_7_15))
+            (not_leucocytes gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (leucocytes gte_7_15_lte_12_15))
-        :effect (and (not (leucocytes gte_7_15_lte_12_15)) (not_leucocytes gte_7_15_lte_12_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (leucocytes gte_7_15_lte_12_15)
+        )
+        :effect (and
+            (not (leucocytes gte_7_15_lte_12_15))
+            (not_leucocytes gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (leucocytes lte_3_4))
-        :effect (and (not (leucocytes lte_3_4)) (not_leucocytes lte_3_4))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (leucocytes lte_3_4))
+            (not_leucocytes lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-gte_12_15_lte_13_95_end
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_12_15_lte_13_95) (not_leucocytes gte_12_15_lte_13_95) (not_leucocytes gte_13_95) (not_leucocytes gte_3_4_lte_7_15) (not_leucocytes gte_7_15_lte_12_15) (not_leucocytes lte_3_4))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_leucocytes_gte_12_15_lte_13_95)) (completed leucocytes) (leucocytes gte_12_15_lte_13_95) (not (not_leucocytes gte_12_15_lte_13_95)) (enabled tau_8) (enabled tau_20) (not (enabled leucocytes)))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_12_15_lte_13_95)
+            (not_leucocytes gte_12_15_lte_13_95)
+            (not_leucocytes gte_13_95)
+            (not_leucocytes gte_3_4_lte_7_15)
+            (not_leucocytes gte_7_15_lte_12_15)
+            (not_leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_leucocytes_gte_12_15_lte_13_95))
+            (completed leucocytes)
+            (leucocytes gte_12_15_lte_13_95)
+            (not (not_leucocytes gte_12_15_lte_13_95))
+            (enabled tau_8)
+            (enabled tau_20)
+            (not (enabled leucocytes))
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_start
         :parameters ()
-        :precondition (and (enabled leucocytes) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_leucocytes_gte_13_95))
+        :precondition (and
+            (enabled leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_leucocytes_gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (leucocytes gte_12_15_lte_13_95))
-        :effect (and (not (leucocytes gte_12_15_lte_13_95)) (not_leucocytes gte_12_15_lte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (leucocytes gte_12_15_lte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_12_15_lte_13_95))
+            (not_leucocytes gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (leucocytes gte_13_95))
-        :effect (and (not (leucocytes gte_13_95)) (not_leucocytes gte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (leucocytes gte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_13_95))
+            (not_leucocytes gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (leucocytes gte_3_4_lte_7_15))
-        :effect (and (not (leucocytes gte_3_4_lte_7_15)) (not_leucocytes gte_3_4_lte_7_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (leucocytes gte_3_4_lte_7_15)
+        )
+        :effect (and
+            (not (leucocytes gte_3_4_lte_7_15))
+            (not_leucocytes gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (leucocytes gte_7_15_lte_12_15))
-        :effect (and (not (leucocytes gte_7_15_lte_12_15)) (not_leucocytes gte_7_15_lte_12_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (leucocytes gte_7_15_lte_12_15)
+        )
+        :effect (and
+            (not (leucocytes gte_7_15_lte_12_15))
+            (not_leucocytes gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (leucocytes lte_3_4))
-        :effect (and (not (leucocytes lte_3_4)) (not_leucocytes lte_3_4))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (leucocytes lte_3_4))
+            (not_leucocytes lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-gte_13_95_end
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_13_95) (not_leucocytes gte_12_15_lte_13_95) (not_leucocytes gte_13_95) (not_leucocytes gte_3_4_lte_7_15) (not_leucocytes gte_7_15_lte_12_15) (not_leucocytes lte_3_4))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_leucocytes_gte_13_95)) (completed leucocytes) (leucocytes gte_13_95) (not (not_leucocytes gte_13_95)) (enabled tau_8) (enabled tau_20) (not (enabled leucocytes)))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_13_95)
+            (not_leucocytes gte_12_15_lte_13_95)
+            (not_leucocytes gte_13_95)
+            (not_leucocytes gte_3_4_lte_7_15)
+            (not_leucocytes gte_7_15_lte_12_15)
+            (not_leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_leucocytes_gte_13_95))
+            (completed leucocytes)
+            (leucocytes gte_13_95)
+            (not (not_leucocytes gte_13_95))
+            (enabled tau_8)
+            (enabled tau_20)
+            (not (enabled leucocytes))
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_start
         :parameters ()
-        :precondition (and (enabled leucocytes) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_leucocytes_gte_3_4_lte_7_15))
+        :precondition (and
+            (enabled leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (leucocytes gte_12_15_lte_13_95))
-        :effect (and (not (leucocytes gte_12_15_lte_13_95)) (not_leucocytes gte_12_15_lte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (leucocytes gte_12_15_lte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_12_15_lte_13_95))
+            (not_leucocytes gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (leucocytes gte_13_95))
-        :effect (and (not (leucocytes gte_13_95)) (not_leucocytes gte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (leucocytes gte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_13_95))
+            (not_leucocytes gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (leucocytes gte_3_4_lte_7_15))
-        :effect (and (not (leucocytes gte_3_4_lte_7_15)) (not_leucocytes gte_3_4_lte_7_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (leucocytes gte_3_4_lte_7_15)
+        )
+        :effect (and
+            (not (leucocytes gte_3_4_lte_7_15))
+            (not_leucocytes gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (leucocytes gte_7_15_lte_12_15))
-        :effect (and (not (leucocytes gte_7_15_lte_12_15)) (not_leucocytes gte_7_15_lte_12_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (leucocytes gte_7_15_lte_12_15)
+        )
+        :effect (and
+            (not (leucocytes gte_7_15_lte_12_15))
+            (not_leucocytes gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (leucocytes lte_3_4))
-        :effect (and (not (leucocytes lte_3_4)) (not_leucocytes lte_3_4))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (leucocytes lte_3_4))
+            (not_leucocytes lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-gte_3_4_lte_7_15_end
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_3_4_lte_7_15) (not_leucocytes gte_12_15_lte_13_95) (not_leucocytes gte_13_95) (not_leucocytes gte_3_4_lte_7_15) (not_leucocytes gte_7_15_lte_12_15) (not_leucocytes lte_3_4))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_leucocytes_gte_3_4_lte_7_15)) (completed leucocytes) (leucocytes gte_3_4_lte_7_15) (not (not_leucocytes gte_3_4_lte_7_15)) (enabled tau_8) (enabled tau_20) (not (enabled leucocytes)))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_3_4_lte_7_15)
+            (not_leucocytes gte_12_15_lte_13_95)
+            (not_leucocytes gte_13_95)
+            (not_leucocytes gte_3_4_lte_7_15)
+            (not_leucocytes gte_7_15_lte_12_15)
+            (not_leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_leucocytes_gte_3_4_lte_7_15))
+            (completed leucocytes)
+            (leucocytes gte_3_4_lte_7_15)
+            (not (not_leucocytes gte_3_4_lte_7_15))
+            (enabled tau_8)
+            (enabled tau_20)
+            (not (enabled leucocytes))
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_start
         :parameters ()
-        :precondition (and (enabled leucocytes) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_leucocytes_gte_7_15_lte_12_15))
+        :precondition (and
+            (enabled leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (leucocytes gte_12_15_lte_13_95))
-        :effect (and (not (leucocytes gte_12_15_lte_13_95)) (not_leucocytes gte_12_15_lte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (leucocytes gte_12_15_lte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_12_15_lte_13_95))
+            (not_leucocytes gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (leucocytes gte_13_95))
-        :effect (and (not (leucocytes gte_13_95)) (not_leucocytes gte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (leucocytes gte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_13_95))
+            (not_leucocytes gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (leucocytes gte_3_4_lte_7_15))
-        :effect (and (not (leucocytes gte_3_4_lte_7_15)) (not_leucocytes gte_3_4_lte_7_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (leucocytes gte_3_4_lte_7_15)
+        )
+        :effect (and
+            (not (leucocytes gte_3_4_lte_7_15))
+            (not_leucocytes gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (leucocytes gte_7_15_lte_12_15))
-        :effect (and (not (leucocytes gte_7_15_lte_12_15)) (not_leucocytes gte_7_15_lte_12_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (leucocytes gte_7_15_lte_12_15)
+        )
+        :effect (and
+            (not (leucocytes gte_7_15_lte_12_15))
+            (not_leucocytes gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (leucocytes lte_3_4))
-        :effect (and (not (leucocytes lte_3_4)) (not_leucocytes lte_3_4))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (leucocytes lte_3_4))
+            (not_leucocytes lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-gte_7_15_lte_12_15_end
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_gte_7_15_lte_12_15) (not_leucocytes gte_12_15_lte_13_95) (not_leucocytes gte_13_95) (not_leucocytes gte_3_4_lte_7_15) (not_leucocytes gte_7_15_lte_12_15) (not_leucocytes lte_3_4))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_leucocytes_gte_7_15_lte_12_15)) (completed leucocytes) (leucocytes gte_7_15_lte_12_15) (not (not_leucocytes gte_7_15_lte_12_15)) (enabled tau_8) (enabled tau_20) (not (enabled leucocytes)))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_gte_7_15_lte_12_15)
+            (not_leucocytes gte_12_15_lte_13_95)
+            (not_leucocytes gte_13_95)
+            (not_leucocytes gte_3_4_lte_7_15)
+            (not_leucocytes gte_7_15_lte_12_15)
+            (not_leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_leucocytes_gte_7_15_lte_12_15))
+            (completed leucocytes)
+            (leucocytes gte_7_15_lte_12_15)
+            (not (not_leucocytes gte_7_15_lte_12_15))
+            (enabled tau_8)
+            (enabled tau_20)
+            (not (enabled leucocytes))
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_start
         :parameters ()
-        :precondition (and (enabled leucocytes) (not_busy))
-        :effect (and (busy) (not (not_busy)) (active_exec_leucocytes_lte_3_4))
+        :precondition (and
+            (enabled leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (busy)
+            (not (not_busy))
+            (active_exec_leucocytes_lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_C0
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (leucocytes gte_12_15_lte_13_95))
-        :effect (and (not (leucocytes gte_12_15_lte_13_95)) (not_leucocytes gte_12_15_lte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (leucocytes gte_12_15_lte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_12_15_lte_13_95))
+            (not_leucocytes gte_12_15_lte_13_95)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_C1
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (leucocytes gte_13_95))
-        :effect (and (not (leucocytes gte_13_95)) (not_leucocytes gte_13_95))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (leucocytes gte_13_95)
+        )
+        :effect (and
+            (not (leucocytes gte_13_95))
+            (not_leucocytes gte_13_95)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_C2
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (leucocytes gte_3_4_lte_7_15))
-        :effect (and (not (leucocytes gte_3_4_lte_7_15)) (not_leucocytes gte_3_4_lte_7_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (leucocytes gte_3_4_lte_7_15)
+        )
+        :effect (and
+            (not (leucocytes gte_3_4_lte_7_15))
+            (not_leucocytes gte_3_4_lte_7_15)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_C3
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (leucocytes gte_7_15_lte_12_15))
-        :effect (and (not (leucocytes gte_7_15_lte_12_15)) (not_leucocytes gte_7_15_lte_12_15))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (leucocytes gte_7_15_lte_12_15)
+        )
+        :effect (and
+            (not (leucocytes gte_7_15_lte_12_15))
+            (not_leucocytes gte_7_15_lte_12_15)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_C4
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (leucocytes lte_3_4))
-        :effect (and (not (leucocytes lte_3_4)) (not_leucocytes lte_3_4))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (leucocytes lte_3_4))
+            (not_leucocytes lte_3_4)
+        )
     )
 
     (:action exec_leucocytes-lte_3_4_end
         :parameters ()
-        :precondition (and (busy) (active_exec_leucocytes_lte_3_4) (not_leucocytes gte_12_15_lte_13_95) (not_leucocytes gte_13_95) (not_leucocytes gte_3_4_lte_7_15) (not_leucocytes gte_7_15_lte_12_15) (not_leucocytes lte_3_4))
-        :effect (and (not (busy)) (not_busy) (not (active_exec_leucocytes_lte_3_4)) (completed leucocytes) (leucocytes lte_3_4) (not (not_leucocytes lte_3_4)) (enabled tau_8) (enabled tau_20) (not (enabled leucocytes)))
+        :precondition (and
+            (busy)
+            (active_exec_leucocytes_lte_3_4)
+            (not_leucocytes gte_12_15_lte_13_95)
+            (not_leucocytes gte_13_95)
+            (not_leucocytes gte_3_4_lte_7_15)
+            (not_leucocytes gte_7_15_lte_12_15)
+            (not_leucocytes lte_3_4)
+        )
+        :effect (and
+            (not (busy))
+            (not_busy)
+            (not (active_exec_leucocytes_lte_3_4))
+            (completed leucocytes)
+            (leucocytes lte_3_4)
+            (not (not_leucocytes lte_3_4))
+            (enabled tau_8)
+            (enabled tau_20)
+            (not (enabled leucocytes))
+        )
     )
 
     (:action exec_release_a
         :parameters ()
-        :precondition (and (enabled release_a)
-            (completed tau_19) (not_busy))
-        :effect (and (completed release_a) (enabled return_er) (enabled tau_3) (not (enabled release_a)))
+        :precondition (and
+            (enabled release_a)
+            (completed tau_19)
+            (not_busy)
+        )
+        :effect (and
+            (completed release_a)
+            (enabled return_er)
+            (enabled tau_3)
+            (not (enabled release_a))
+        )
     )
 
     (:action exec_release_b_v1
         :parameters ()
-        :precondition (and (crp gte_147_5)
+        :precondition (and
+            (crp gte_147_5)
             (enabled release_b)
             (completed tau_19)
-            (completed iv_antibiotics) (not_busy))
-        :effect (and (completed release_b) (not (enabled release_b)))
+            (completed iv_antibiotics)
+            (not_busy)
+        )
+        :effect (and
+            (completed release_b)
+            (not (enabled release_b))
+        )
     )
 
     (:action exec_return_er_v1
         :parameters ()
-        :precondition (and (leucocytes gte_3_4_lte_7_15)
+        :precondition (and
+            (leucocytes gte_3_4_lte_7_15)
             (enabled return_er)
             (completed leucocytes)
-            (completed release_a) (not_busy))
-        :effect (and (completed return_er) (not (enabled return_er)))
+            (completed release_a)
+            (not_busy)
+        )
+        :effect (and
+            (completed return_er)
+            (not (enabled return_er))
+        )
     )
 
     (:action exec_tau_1
         :parameters ()
-        :precondition (and (completed crp)
-            (enabled tau_1) (not_busy))
-        :effect (and (completed tau_1) (enabled crp) (not (enabled tau_1)))
+        :precondition (and
+            (completed crp)
+            (enabled tau_1)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_1)
+            (enabled crp)
+            (not (enabled tau_1))
+        )
     )
 
     (:action exec_tau_10
         :parameters ()
-        :precondition (and (completed tau_17)
-            (enabled tau_10) (not_busy))
-        :effect (and (completed tau_10) (enabled admission_nc) (not (enabled tau_10)))
+        :precondition (and
+            (completed tau_17)
+            (enabled tau_10)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_10)
+            (enabled admission_nc)
+            (not (enabled tau_10))
+        )
     )
 
     (:action exec_tau_11
         :parameters ()
-        :precondition (and (completed tau_19)
-            (enabled tau_11) (not_busy))
-        :effect (and (completed tau_11) (not (enabled tau_11)))
+        :precondition (and
+            (completed tau_19)
+            (enabled tau_11)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_11)
+            (not (enabled tau_11))
+        )
     )
 
     (:action exec_tau_12
         :parameters ()
-        :precondition (and (completed tau_9)
-            (enabled tau_12) (not_busy))
-        :effect (and (completed tau_12) (enabled tau_16) (not (enabled tau_12)))
+        :precondition (and
+            (completed tau_9)
+            (enabled tau_12)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_12)
+            (enabled tau_16)
+            (not (enabled tau_12))
+        )
     )
 
     (:action exec_tau_13
         :parameters ()
-        :precondition (and (completed tau_17)
-            (enabled tau_13) (not_busy))
-        :effect (and (completed tau_13) (enabled tau_19) (not (enabled tau_13)))
+        :precondition (and
+            (completed tau_17)
+            (enabled tau_13)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_13)
+            (enabled tau_19)
+            (not (enabled tau_13))
+        )
     )
 
     (:action exec_tau_14
         :parameters ()
-        :precondition (and (completed crp)
-            (enabled tau_14) (not_busy))
-        :effect (and (completed tau_14) (enabled tau_19) (not (enabled tau_14)))
+        :precondition (and
+            (completed crp)
+            (enabled tau_14)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_14)
+            (enabled tau_19)
+            (not (enabled tau_14))
+        )
     )
 
     (:action exec_tau_15
         :parameters ()
-        :precondition (and (enabled tau_15)
-            (completed admission_nc) (not_busy))
-        :effect (and (completed tau_15) (enabled tau_19) (not (enabled tau_15)))
+        :precondition (and
+            (enabled tau_15)
+            (completed admission_nc)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_15)
+            (enabled tau_19)
+            (not (enabled tau_15))
+        )
     )
 
     (:action exec_tau_16
         :parameters ()
-        :precondition (and (enabled tau_16)
-            (completed iv_antibiotics) (not_busy))
-        :effect (and (completed tau_16) (enabled tau_17) (not (enabled tau_16)))
+        :precondition (and
+            (enabled tau_16)
+            (completed iv_antibiotics)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_16)
+            (enabled tau_17)
+            (not (enabled tau_16))
+        )
     )
 
     (:action exec_tau_17
         :parameters ()
-        :precondition (and (completed tau_4)
-            (enabled tau_17) (not_busy))
-        :effect (and (completed tau_17) (enabled tau_13) (enabled tau_10) (not (enabled tau_17)))
+        :precondition (and
+            (completed tau_4)
+            (enabled tau_17)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_17)
+            (enabled tau_13)
+            (enabled tau_10)
+            (not (enabled tau_17))
+        )
     )
 
     (:action exec_tau_18
         :parameters ()
-        :precondition (and (enabled tau_18)
-            (completed er_triage) (not_busy))
-        :effect (and (completed tau_18) (enabled crp) (not (enabled tau_18)))
+        :precondition (and
+            (enabled tau_18)
+            (completed er_triage)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_18)
+            (enabled crp)
+            (not (enabled tau_18))
+        )
     )
 
     (:action exec_tau_19
         :parameters ()
-        :precondition (and (completed tau_21)
-            (enabled tau_19) (not_busy))
-        :effect (and (completed tau_19) (enabled release_a) (enabled release_b) (enabled tau_11) (not (enabled tau_19)))
+        :precondition (and
+            (completed tau_21)
+            (enabled tau_19)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_19)
+            (enabled release_a)
+            (enabled release_b)
+            (enabled tau_11)
+            (not (enabled tau_19))
+        )
     )
 
     (:action exec_tau_2
         :parameters ()
-        :precondition (and (enabled tau_2)
-            (completed er_sepsis_triage) (not_busy))
-        :effect (and (completed tau_2) (enabled tau_17) (not (enabled tau_2)))
+        :precondition (and
+            (enabled tau_2)
+            (completed er_sepsis_triage)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_2)
+            (enabled tau_17)
+            (not (enabled tau_2))
+        )
     )
 
     (:action exec_tau_20
         :parameters ()
-        :precondition (and (completed leucocytes)
-            (enabled tau_20) (not_busy))
-        :effect (and (completed tau_20) (enabled tau_19) (not (enabled tau_20)))
+        :precondition (and
+            (completed leucocytes)
+            (enabled tau_20)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_20)
+            (enabled tau_19)
+            (not (enabled tau_20))
+        )
     )
 
     (:action exec_tau_21
         :parameters ()
-        :precondition (and (completed er_triage)
-            (enabled tau_21) (not_busy))
-        :effect (and (completed tau_21) (enabled tau_19) (not (enabled tau_21)))
+        :precondition (and
+            (completed er_triage)
+            (enabled tau_21)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_21)
+            (enabled tau_19)
+            (not (enabled tau_21))
+        )
     )
 
     (:action exec_tau_3
         :parameters ()
-        :precondition (and (enabled tau_3)
-            (completed release_a) (not_busy))
-        :effect (and (completed tau_3) (not (enabled tau_3)))
+        :precondition (and
+            (enabled tau_3)
+            (completed release_a)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_3)
+            (not (enabled tau_3))
+        )
     )
 
     (:action exec_tau_4
         :parameters ()
-        :precondition (and (completed er_triage)
-            (enabled tau_4) (not_busy))
-        :effect (and (completed tau_4) (enabled tau_17) (not (enabled tau_4)))
+        :precondition (and
+            (completed er_triage)
+            (enabled tau_4)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_4)
+            (enabled tau_17)
+            (not (enabled tau_4))
+        )
     )
 
     (:action exec_tau_5
         :parameters ()
-        :precondition (and (enabled tau_5)
-            (completed er_triage) (not_busy))
-        :effect (and (completed tau_5) (enabled tau_19) (not (enabled tau_5)))
+        :precondition (and
+            (enabled tau_5)
+            (completed er_triage)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_5)
+            (enabled tau_19)
+            (not (enabled tau_5))
+        )
     )
 
     (:action exec_tau_6
         :parameters ()
-        :precondition (and (enabled tau_6)
-            (completed er_triage) (not_busy))
-        :effect (and (completed tau_6) (enabled leucocytes) (not (enabled tau_6)))
+        :precondition (and
+            (enabled tau_6)
+            (completed er_triage)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_6)
+            (enabled leucocytes)
+            (not (enabled tau_6))
+        )
     )
 
     (:action exec_tau_7
         :parameters ()
-        :precondition (and (enabled tau_7)
-            (completed admission_nc) (not_busy))
-        :effect (and (completed tau_7) (enabled admission_nc) (not (enabled tau_7)))
+        :precondition (and
+            (enabled tau_7)
+            (completed admission_nc)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_7)
+            (enabled admission_nc)
+            (not (enabled tau_7))
+        )
     )
 
     (:action exec_tau_8
         :parameters ()
-        :precondition (and (enabled tau_8)
-            (completed leucocytes) (not_busy))
-        :effect (and (completed tau_8) (enabled leucocytes) (not (enabled tau_8)))
+        :precondition (and
+            (enabled tau_8)
+            (completed leucocytes)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_8)
+            (enabled leucocytes)
+            (not (enabled tau_8))
+        )
     )
 
     (:action exec_tau_9
         :parameters ()
-        :precondition (and (completed er_sepsis_triage)
-            (enabled tau_9) (not_busy))
-        :effect (and (completed tau_9) (enabled tau_12) (enabled iv_liquid) (enabled iv_antibiotics) (not (enabled tau_9)))
+        :precondition (and
+            (completed er_sepsis_triage)
+            (enabled tau_9)
+            (not_busy)
+        )
+        :effect (and
+            (completed tau_9)
+            (enabled tau_12)
+            (enabled iv_liquid)
+            (enabled iv_antibiotics)
+            (not (enabled tau_9))
+        )
     )
 )
