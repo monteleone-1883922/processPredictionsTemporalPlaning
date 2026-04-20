@@ -3,10 +3,25 @@
     (:init
         (completed er_registration)
         (enabled er_triage)
+        (not_busy)
+        (not_crp gte_147_5)
+        (not_crp gte_28_5_lte_40_5)
+        (not_crp gte_40_5_lte_57_5)
+        (not_crp gte_57_5_lte_147_5)
+        (not_crp lte_28_5)
+        (not_lacticacid gte_0_2_lte_0_75)
+        (not_lacticacid gte_0_75_lte_2_15)
+        (not_lacticacid gte_2_15)
+        (not_lacticacid lte_0_2)
+        (not_leucocytes gte_12_15_lte_13_95)
+        (not_leucocytes gte_13_95)
+        (not_leucocytes gte_3_4_lte_7_15)
+        (not_leucocytes gte_7_15_lte_12_15)
+        (not_leucocytes lte_3_4)
     )
-)
-(:goal
-    (and
-        (completed er_sepsis_triage)
-        (crp gte_147_5))
+    (:goal
+        (and
+            (completed er_sepsis_triage)
+            (crp gte_147_5))
+    )
 )
